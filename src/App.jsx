@@ -11,7 +11,7 @@ function App() {
       <Navbar></Navbar>
       <div className='min-h-[calc(100vh-268px)]'>
         {/* Dynamic Sections */}
-        <Outlet></Outlet>
+        <Outlet/>
       </div>
       {/* Footer */}
       <Footer></Footer>
