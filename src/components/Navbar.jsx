@@ -32,9 +32,21 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal gap-6 px-1">
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/statistics'>Statistics</NavLink>
-                    <NavLink to='/dashboard'>Dashboard</NavLink>
+                    <NavLink to='/'
+                        style={({ isActive }) =>
+                            isActive ? {fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                        }
+                    >Home</NavLink>
+                    <NavLink to='/statistics'
+                    style={({ isActive }) =>
+                        isActive ? {fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                    }
+                    >Statistics</NavLink>
+                    <NavLink to='/dashboard'
+                    style={({ isActive }) =>
+                        isActive ? {fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                    }
+                    >Dashboard</NavLink>
 
                 </ul>
             </div>
