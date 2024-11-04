@@ -21,11 +21,23 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-4">
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-4 text-black">
 
-                        <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/statistics'>Statistics</NavLink>
-                        <NavLink to='/dashboard'>Dashboard</NavLink>
+                        <NavLink to='/'
+                            style={({ isActive }) =>
+                                isActive ? { fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                            }
+                        >Home</NavLink>
+                        <NavLink to='/statistics'
+                            style={({ isActive }) =>
+                                isActive ? { fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                            }
+                        >Statistics</NavLink>
+                        <NavLink to='/dashboard'
+                            style={({ isActive }) =>
+                                isActive ? { fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                            }
+                        >Dashboard</NavLink>
                     </ul>
                 </div>
                 <Link to='/' className="font-bold text-xl">Gadget Heaven</Link>
@@ -34,18 +46,18 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal gap-6 px-1">
                     <NavLink to='/'
                         style={({ isActive }) =>
-                            isActive ? {fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                            isActive ? { fontWeight: 'bold', textDecoration: 'underline' } : undefined
                         }
                     >Home</NavLink>
                     <NavLink to='/statistics'
-                    style={({ isActive }) =>
-                        isActive ? {fontWeight: 'bold', textDecoration: 'underline' } : undefined
-                    }
+                        style={({ isActive }) =>
+                            isActive ? { fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                        }
                     >Statistics</NavLink>
                     <NavLink to='/dashboard'
-                    style={({ isActive }) =>
-                        isActive ? {fontWeight: 'bold', textDecoration: 'underline' } : undefined
-                    }
+                        style={({ isActive }) =>
+                            isActive ? { fontWeight: 'bold', textDecoration: 'underline' } : undefined
+                        }
                     >Dashboard</NavLink>
 
                 </ul>
