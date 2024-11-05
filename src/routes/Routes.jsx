@@ -6,6 +6,8 @@ import Dashboard from "../pages/Dashboard"
 import GadgetCards from "../components/GadgetCards";
 import Offers from "../pages/Offers";
 import GadgetDetails from "../pages/GadgetDetails";
+import Cart from "../components/Cart";
+import WhishList from "../components/WhishList";
 
 // const routes = createBrowserRouter([
 //     {
@@ -43,6 +45,8 @@ const routes = createBrowserRouter(
             <Route path="/gadget/:product_id" element={<GadgetDetails></GadgetDetails>}
             loader={()=>fetch('../../public/allGadgets.json')}
             />
+            <Route path="/cart" element={<Cart/>} />
+            <Route path="/wishlist" element={<WhishList/>} />
 
         </Route>
     )
