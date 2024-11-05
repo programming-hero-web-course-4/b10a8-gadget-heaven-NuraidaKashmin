@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Heading = ({ title, subtitle, button, imageSection, titleSecond }) => {
+const Heading = ({ title, subtitle, button, imageSection }) => {
     
     return (
         <div className='relative'>

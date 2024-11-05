@@ -6,7 +6,7 @@ const Card = ({ gadget }) => {
     const { product_id, product_title, product_image, category, price, description, specification, availability, rating, brand } = gadget || {}
     return (
         <div>
-            <Link to={`/gadget/${product_id}`} className="card bg-base-100 gap-2 shadow-xl">
+            <Link to={`/gadget/${product_id}`} className="card bg-base-100 gap-2 shadow-xl ">
                 <img
                     src={product_image}
                     alt="card image"

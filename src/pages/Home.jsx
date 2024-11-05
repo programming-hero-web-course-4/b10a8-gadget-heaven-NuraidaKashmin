@@ -7,7 +7,7 @@ const Home = () => {
     const categories = useLoaderData()
 
     const imageSection = (
-        <div className='absolute top-3/4 left-1/2 transform -translate-x-1/2 p-4 border-white border-2 rounded-3xl'>
+        <div className='absolute  top-3/4 left-1/2 transform -translate-x-1/2 p-4 border-white border-2 rounded-3xl'>
             <img className="border rounded-3xl w-full" src='../../public/assets/banner.jpg' alt="banner" />
         </div>
     )
