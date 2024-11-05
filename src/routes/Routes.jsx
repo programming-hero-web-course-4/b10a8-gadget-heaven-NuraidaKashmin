@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import Statistics from "../pages/Statistics"
 import Dashboard from "../pages/Dashboard"
+import GadgetCards from "../components/GadgetCards";
 
 // const routes = createBrowserRouter([
 //     {
@@ -26,7 +27,14 @@ import Dashboard from "../pages/Dashboard"
 const routes = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App></App>}>
-            <Route path="/" element={<Home></Home>}/>
+            <Route path="/" element={<Home></Home>} loader={()=> fetch('../../public/gadgets.json')}>
+                <Route path="/" element={<GadgetCards></GadgetCards>}
+                loader={()=>fetch('../../public/allGadgets.json')}></Route>
+                <Route path="/category/:category" element={<GadgetCards></GadgetCards>}
+                loader={()=>fetch('../../public/allGadgets.json')}></Route>
+            </Route>
+            
+            
             <Route path="/statistics" element={<Statistics></Statistics>}/>
             <Route path="/dashboard" element={<Dashboard></Dashboard>}/>
 

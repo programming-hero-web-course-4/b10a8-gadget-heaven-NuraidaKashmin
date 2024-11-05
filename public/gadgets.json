@@ -16,86 +16,6 @@
         "brand": "SuperBrand"
     },
     {
-        "product_id": "SP002",
-        "product_title": "SmartPhone Pro",
-        "product_image": "https://i.ibb.co.com/sb3Y0GX/2.jpg",
-        "category": "Smartphones",
-        "price": 899,
-        "description": "An advanced smartphone designed for professionals.",
-        "specification": [
-            "6.7-inch AMOLED display",
-            "256GB storage",
-            "Quad rear camera"
-        ],
-        "availability": true,
-        "rating": 4.8,
-        "brand": "TechGuru"
-    },
-    {
-        "product_id": "SP003",
-        "product_title": "BudgetPhone Lite",
-        "product_image": "https://i.ibb.co.com/PWh3g0V/3.jpg",
-        "category": "Smartphones",
-        "price": 150,
-        "description": "Affordable smartphone with essential features.",
-        "specification": [
-            "5.5-inch LCD display",
-            "64GB storage",
-            "Dual rear camera"
-        ],
-        "availability": false,
-        "rating": 4.2,
-        "brand": "EconoTech"
-    },
-    {
-        "product_id": "SP004",
-        "product_title": "UltraPhone S",
-        "product_image": "https://i.ibb.co.com/Nng3d4k/4.jpg",
-        "category": "Smartphones",
-        "price": 750,
-        "description": "A powerful smartphone with a sleek design.",
-        "specification": [
-            "6.3-inch OLED display",
-            "128GB storage",
-            "Dual front camera"
-        ],
-        "availability": true,
-        "rating": 4.5,
-        "brand": "UltraTech"
-    },
-    {
-        "product_id": "SP005",
-        "product_title": "ProPhone Max",
-        "product_image": "https://i.ibb.co.com/JyhWjZS/5.jpg",
-        "category": "Smartphones",
-        "price": 950,
-        "description": "High-end smartphone with pro-level features.",
-        "specification": [
-            "6.8-inch Super Retina display",
-            "512GB storage",
-            "Quad rear camera"
-        ],
-        "availability": true,
-        "rating": 4.9,
-        "brand": "PrimeTech"
-    },
-    {
-        "product_id": "SP006",
-        "product_title": "MiniPhone Plus",
-        "product_image": "https://i.ibb.co.com/JR720f2/6.jpg",
-        "category": "Smartphones",
-        "price": 300,
-        "description": "Compact smartphone with great performance.",
-        "specification": [
-            "5.8-inch OLED display",
-            "128GB storage",
-            "Single rear camera"
-        ],
-        "availability": false,
-        "rating": 4.3,
-        "brand": "MiniTech"
-    },
-    {
         "product_id": "LP001",
         "product_title": "WorkBook Pro",
         "product_image": "https://i.ibb.co.com/X79R0CZ/7.jpg",
@@ -113,10 +33,10 @@
         "brand": "WorkBrand"
     },
     {
-        "product_id": "LP002",
-        "product_title": "GameBook X",
+        "product_id": "SW002",
+        "product_title": "Watch X",
         "product_image": "https://i.ibb.co.com/jgz1sNL/8.jpg",
-        "category": "Laptops",
+        "category": "Smart Watches",
         "price": 1500,
         "description": "Gaming laptop with top-notch graphics.",
         "specification": [
@@ -147,10 +67,10 @@
         "brand": "SoundX"
     },
     {
-        "product_id": "HP002",
-        "product_title": "StudioSound Wireless",
+        "product_id": "PB002",
+        "product_title": "Wireless Power",
         "product_image": "https://i.ibb.co.com/FJ5tMTN/10.jpg",
-        "category": "Headphones",
+        "category": "Power Banks",
         "price": 120,
         "description": "Wireless headphones for studio-quality sound.",
         "specification": [

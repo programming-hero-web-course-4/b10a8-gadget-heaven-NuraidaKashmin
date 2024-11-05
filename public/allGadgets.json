@@ -1,0 +1,166 @@
+[
+    {
+        "product_id": "SP001",
+        "product_title": "SuperPhone X",
+        "product_image": "https://i.ibb.co.com/pf3TgPf/1.jpg",
+        "category": "Smartphones",
+        "price": 699,
+        "description": "A high-performance smartphone with cutting-edge features.",
+        "specification": [
+            "6.5-inch OLED display",
+            "128GB storage",
+            "Triple rear camera"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "brand": "SuperBrand"
+    },
+    {
+        "product_id": "SP002",
+        "product_title": "SmartPhone Pro",
+        "product_image": "https://i.ibb.co.com/sb3Y0GX/2.jpg",
+        "category": "Smartphones",
+        "price": 899,
+        "description": "An advanced smartphone designed for professionals.",
+        "specification": [
+            "6.7-inch AMOLED display",
+            "256GB storage",
+            "Quad rear camera"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "brand": "TechGuru"
+    },
+    {
+        "product_id": "SP003",
+        "product_title": "BudgetPhone Lite",
+        "product_image": "https://i.ibb.co.com/PWh3g0V/3.jpg",
+        "category": "Smartphones",
+        "price": 150,
+        "description": "Affordable smartphone with essential features.",
+        "specification": [
+            "5.5-inch LCD display",
+            "64GB storage",
+            "Dual rear camera"
+        ],
+        "availability": false,
+        "rating": 4.2,
+        "brand": "EconoTech"
+    },
+    {
+        "product_id": "SP004",
+        "product_title": "UltraPhone S",
+        "product_image": "https://i.ibb.co.com/Nng3d4k/4.jpg",
+        "category": "Smartphones",
+        "price": 750,
+        "description": "A powerful smartphone with a sleek design.",
+        "specification": [
+            "6.3-inch OLED display",
+            "128GB storage",
+            "Dual front camera"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "brand": "UltraTech"
+    },
+    {
+        "product_id": "SP005",
+        "product_title": "ProPhone Max",
+        "product_image": "https://i.ibb.co.com/JyhWjZS/5.jpg",
+        "category": "Smartphones",
+        "price": 950,
+        "description": "High-end smartphone with pro-level features.",
+        "specification": [
+            "6.8-inch Super Retina display",
+            "512GB storage",
+            "Quad rear camera"
+        ],
+        "availability": true,
+        "rating": 4.9,
+        "brand": "PrimeTech"
+    },
+    {
+        "product_id": "SP006",
+        "product_title": "MiniPhone Plus",
+        "product_image": "https://i.ibb.co.com/JR720f2/6.jpg",
+        "category": "Smartphones",
+        "price": 300,
+        "description": "Compact smartphone with great performance.",
+        "specification": [
+            "5.8-inch OLED display",
+            "128GB storage",
+            "Single rear camera"
+        ],
+        "availability": false,
+        "rating": 4.3,
+        "brand": "MiniTech"
+    },
+    {
+        "product_id": "LP001",
+        "product_title": "WorkBook Pro",
+        "product_image": "https://i.ibb.co.com/X79R0CZ/7.jpg",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "Powerful laptop for professional use.",
+        "specification": [
+            "15.6-inch display",
+            "Intel i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "brand": "WorkBrand"
+    },
+    {
+        "product_id": "LP002",
+        "product_title": "GameBook X",
+        "product_image": "https://i.ibb.co.com/jgz1sNL/8.jpg",
+        "category": "Laptops",
+        "price": 1500,
+        "description": "Gaming laptop with top-notch graphics.",
+        "specification": [
+            "17.3-inch display",
+            "Intel i9",
+            "32GB RAM",
+            "1TB SSD",
+            "RTX 3080"
+        ],
+        "availability": true,
+        "rating": 4.9,
+        "brand": "GameMaster"
+    },
+    {
+        "product_id": "HP001",
+        "product_title": "BassHead 500",
+        "product_image": "https://i.ibb.co.com/9pDcfpY/9.jpg",
+        "category": "Headphones",
+        "price": 75,
+        "description": "Over-ear headphones with deep bass.",
+        "specification": [
+            "Over-ear",
+            "Noise-cancelling",
+            "20-hour battery life"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "brand": "SoundX"
+    },
+    {
+        "product_id": "HP002",
+        "product_title": "StudioSound Wireless",
+        "product_image": "https://i.ibb.co.com/FJ5tMTN/10.jpg",
+        "category": "Headphones",
+        "price": 120,
+        "description": "Wireless headphones for studio-quality sound.",
+        "specification": [
+            "On-ear",
+            "Bluetooth 5.0",
+            "30-hour battery life",
+            "Foldable"
+        ],
+        "availability": false,
+        "rating": 4.7,
+        "brand": "StudioWave"
+    }
+]

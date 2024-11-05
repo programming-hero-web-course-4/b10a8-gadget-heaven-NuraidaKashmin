@@ -9,7 +9,7 @@ function App() {
     <>
       {/* Navbar */}
       <Navbar></Navbar>
-      <div className='min-h-[calc(100vh-268px)]'>
+      <div className=''>
         {/* Dynamic Sections */}
         <Outlet/>
       </div>
