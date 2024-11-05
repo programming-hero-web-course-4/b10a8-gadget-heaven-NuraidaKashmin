@@ -33,7 +33,7 @@
         "brand": "WorkBrand"
     },
     {
-        "product_id": "SW002",
+        "product_id": "",
         "product_title": "Watch X",
         "product_image": "https://i.ibb.co.com/jgz1sNL/8.jpg",
         "category": "Smart Watches",
@@ -67,7 +67,7 @@
         "brand": "SoundX"
     },
     {
-        "product_id": "PB002",
+        "product_id": "",
         "product_title": "Wireless Power",
         "product_image": "https://i.ibb.co.com/FJ5tMTN/10.jpg",
         "category": "Power Banks",

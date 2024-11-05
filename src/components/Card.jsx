@@ -10,7 +10,7 @@ const Card = ({ gadget }) => {
                 <img
                     src={product_image}
                     alt="card image"
-                    className="rounded-xl" />
+                    className="rounded-xl w-full" />
                 <h2 className="card-title">{product_title}</h2>
                 <p className="text-gray-600 font-bold">Price: {price}K</p>
                 <div className="card-actions">

@@ -14,7 +14,7 @@ function App() {
         <Outlet/>
       </div>
       {/* Footer */}
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
       
 
     </>

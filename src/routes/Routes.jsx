@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Statistics from "../pages/Statistics"
 import Dashboard from "../pages/Dashboard"
 import GadgetCards from "../components/GadgetCards";
+import Offers from "../pages/Offers";
 
 // const routes = createBrowserRouter([
 //     {
@@ -37,6 +38,7 @@ const routes = createBrowserRouter(
             
             <Route path="/statistics" element={<Statistics></Statistics>}/>
             <Route path="/dashboard" element={<Dashboard></Dashboard>}/>
+            <Route path="/offers" element={<Offers></Offers>}/>
 
         </Route>
     )
