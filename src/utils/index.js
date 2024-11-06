@@ -31,10 +31,11 @@ const getAllWishlistData = () => {
 
 
     const addToWishlist = (gadget) => {
+
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-    const isExist = wishlist.find(item => item.product_id === gadget.product_id);
-    if (!isExist) return toast.error('Already exist!');
+    const isExist = wishlist.find(item => item.product_id == gadget.product_id);
+    if (isExist) return toast.error('Already exist!');
         
         wishlist.push(gadget);
 

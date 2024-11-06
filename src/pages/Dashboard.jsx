@@ -100,6 +100,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         ))}
+                        {cartItems.length === 0 && <p>No items in cart.</p>}
                     </div>
 
                 </div>
@@ -107,7 +108,9 @@ const Dashboard = () => {
 
             {activeTab === 'wishlist' && (
                 <div className="mt-8">
+                    <div>
                     <h2 className="text-2xl font-bold mb-2">Wishlist Items</h2>
+                    </div>
                     <div>
                         {wishlistItems.map(item => (
                             <div key={item.product_id} className="card mb-4">
@@ -118,7 +121,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         ))}
-                        {wishlistItems.length === 0 && <p>No items in the wishlist.</p>}
+                        {wishlistItems.length === 0 && <p>No items in wishlist.</p>}
                     </div>
                 </div>
             )}
