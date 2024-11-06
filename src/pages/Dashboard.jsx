@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import HeadingDetails from "../components/HeadingDetails";
 import { getAllCartData, getAllWishlistData } from "../utils";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+
 
 const Dashboard = () => {
+    
 
     const [activeTab, setActiveTab] = useState('cart');
     const [cartItems, setCartItems] = useState([]);
@@ -38,6 +41,10 @@ const Dashboard = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Dashboard || Gadget Heaven</title>
+                <meta name="description" content="Dashboard Page"/>
+            </Helmet>
             <HeadingDetails title={'Dashboard'} subtitle={'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'}></HeadingDetails>
 
 

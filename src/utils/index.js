@@ -26,13 +26,19 @@ const addToCart = (gadget) => {
 
 
 const getAllWishlistData = () => {
-    return JSON.parse(localStorage.getItem('wishlist')) || [];
+    const wishAll = localStorage.getItem('wishlist')
+    if (wishAll){
+        const wishlist = JSON.parse(wishAll)
+        return wishlist
+    } else{
+        return []
+    }
 };
 
 
     const addToWishlist = (gadget) => {
 
-    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const wishlist = getAllWishlistData()
 
     const isExist = wishlist.find(item => item.product_id == gadget.product_id);
     if (isExist) return toast.error('Already exist!');

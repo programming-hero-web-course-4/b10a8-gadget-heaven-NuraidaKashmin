@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import HeadingDetails from "../components/HeadingDetails";
 import { addToCart, addToWishlist, getAllWishlistData, getAllCartData } from "../utils";
+import { Helmet } from 'react-helmet-async';
 
 const GadgetDetails = () => {
+
+
     const data = useLoaderData();
     const { product_id } = useParams();
     const [gadgets, setGadgets] = useState({});
@@ -37,6 +40,10 @@ const GadgetDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Gadget Details || Gadget Heaven</title>
+                <meta name="description" content="Gadget Details Page" />
+            </Helmet>
             <div className="relative">
                 <HeadingDetails
                     title="Product Details"
@@ -68,7 +75,7 @@ const GadgetDetails = () => {
                             <NavLink
                                 onClick={() => handleCart(gadgets)}
                                 className={`btn rounded-full text-white ${isInCart ? 'bg-gray-500' : 'bg-[#9538e2]'}`}
-                                
+
                             >
                                 {isInCart ? 'Added to Cart' : 'Add to Cart'}
                             </NavLink>

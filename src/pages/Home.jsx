@@ -2,8 +2,11 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import Heading from "../components/Heading";
 import Categories from "../components/Categories";
 import SubHeading from "../components/SubHeading";
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
+
+
     const categories = useLoaderData()
 
     const imageSection = (
@@ -14,6 +17,10 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Home || Gadget Heaven</title>
+                <meta name="description" content="Home Page" />
+            </Helmet>
             {/* Heading */}
             <Heading title={'Upgrade Your Tech Accessorize with Gadget Heaven Accessories'} subtitle={'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'} button={'Shop Now'} imageSection={imageSection}></Heading>
             <SubHeading></SubHeading>
