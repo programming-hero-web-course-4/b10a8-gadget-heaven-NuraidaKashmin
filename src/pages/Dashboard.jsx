@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import HeadingDetails from "../components/HeadingDetails";
 import { getAllCartData, getAllWishlistData } from "../utils";
-
-
-
-
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
 
@@ -12,6 +9,10 @@ const Dashboard = () => {
     const [cartItems, setCartItems] = useState([]);
     const [wishlistItems, setWishlistItems] = useState([]);
     const [sortedCartItems, setSortedCartItems] = useState([]);
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         setCartItems(getAllCartData());
@@ -21,6 +22,17 @@ const Dashboard = () => {
     const handleSortByPrice = () => {
         const sortedItems = [...cartItems].sort((a, b) => b.price - a.price);
         setSortedCartItems(sortedItems);
+    };
+
+    const handlePurchase = () => {
+        localStorage.removeItem('cart');
+        setCartItems([]);
+        setIsModalVisible(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalVisible(false);
+        navigate("/");
     };
 
 
@@ -58,11 +70,27 @@ const Dashboard = () => {
                                 <button onClick={handleSortByPrice} className="btn rounded-xl border-2 border-[#9538e2] text-[#9538e2]">
                                     Sort by Price
                                 </button>
-                                <button className="btn bg-[#9538e2] text-white rounded-xl">Purchase</button>
+                                <button onClick={handlePurchase} className="btn bg-[#9538e2] text-white rounded-xl">Purchase</button>
+
+
+                                {isModalVisible && (
+                                    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                                        <div className="bg-white p-4 rounded-lg">
+                                            <h2 className="text-2xl font-bold mb-2">Congratulations!</h2>
+                                            <p>Purchased successfully</p>
+                                            <button
+                                                onClick={handleCloseModal}
+                                                className="btn bg-[#9538e2] text-white mt-4"
+                                            >
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
+
+
                             </div>
                         </div>
-
-
                         {(sortedCartItems.length > 0 ? sortedCartItems : cartItems).map(item => (
                             <div key={item.product_id} className="card mb-4">
                                 <img src={item.product_image} alt={item.product_title} className="w-44 h-44" />
@@ -94,7 +122,6 @@ const Dashboard = () => {
                     </div>
                 </div>
             )}
-
 
         </div>
     );

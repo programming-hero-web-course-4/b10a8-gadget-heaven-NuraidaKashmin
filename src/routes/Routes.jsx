@@ -9,24 +9,6 @@ import GadgetDetails from "../pages/GadgetDetails";
 import Cart from "../components/Cart";
 import WhishList from "../components/WhishList";
 
-// const routes = createBrowserRouter([
-//     {
-//         path: '/',
-//         element: <App></App>,
-//         children: [
-//             {
-//                 path: '/',
-//                 element: <Home></Home>
-//             },
-//             {
-//                 path: '/statistic',
-//                 element: <Statistics></Statistics>
-//             },
-            
-//         ]
-//     }
-// ])
-
 
 const routes = createBrowserRouter(
     createRoutesFromElements(
