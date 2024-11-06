@@ -1,33 +1,52 @@
 import toast from "react-hot-toast"
 
-const getAllCartData = ()=>{
+const getAllCartData = () => {
     const all = localStorage.getItem('addCart')
-    if(all){
+    if (all) {
         const addCart = JSON.parse(all)
         return addCart
-    }else{
+    } else {
         return []
     }
 }
 
 
 
-const addToCart = (gadget)=>{
+const addToCart = (gadget) => {
 
 
     const addCart = getAllCartData()
     const isExist = addCart.find(item => item.product_id == gadget.product_id)
     if (isExist) return toast.error('Already exist!');
-   
+
     addCart.push(gadget)
     localStorage.setItem('addCart', JSON.stringify(addCart))
     toast.success('Successfully added!');
 }
 
 
+const getAllWishlistData = () => {
+    return JSON.parse(localStorage.getItem('wishlist')) || [];
+};
+
+
+    const addToWishlist = (gadget) => {
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+    const isExist = wishlist.find(item => item.product_id === gadget.product_id);
+    if (!isExist) return toast.error('Already exist!');
+        
+        wishlist.push(gadget);
+
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        toast.success('Successfully added!');
+    
+};
 
 
 
 
 
-export {addToCart , getAllCartData}
+
+
+export { addToCart, getAllCartData , addToWishlist, getAllWishlistData}
