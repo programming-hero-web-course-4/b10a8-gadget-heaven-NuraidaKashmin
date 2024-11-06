@@ -2,6 +2,8 @@
 
 **Attach Live Website Link**
 
+https://gadget-heaven-nuraida.netlify.app/
+
 **Attach Requirement Document Link**
 
     https://docs.google.com/document/d/1LxKA5kLrI5CH4fNhX-QWM4eSwaf53ImVpQsyR0k43b4/edit?usp=sharing
