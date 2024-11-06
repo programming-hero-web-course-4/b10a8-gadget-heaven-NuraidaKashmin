@@ -40,7 +40,7 @@ const getAllWishlistData = () => {
 
     const wishlist = getAllWishlistData()
 
-    const isExist = wishlist.find(item => item.product_id == gadget.product_id);
+    const isExist = wishlist.find(item => item.product_id == gadget.product_id)
     if (isExist) return toast.error('Already exist!');
         
         wishlist.push(gadget);
